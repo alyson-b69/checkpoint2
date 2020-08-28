@@ -1,12 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaRegCalendarAlt } from "react-icons/fa";
-import { Card, Image, Container } from "react-bootstrap";
+import { Card, Image, Container, Button } from "react-bootstrap";
 
 const GameDetails = (props) => {
   const game = props.location.state.detail;
 
   return (
     <Container className="mt-5 mb-5 text-center">
+      <Link to="/">
+        <Button className="mb-2">Back to home</Button>
+      </Link>
       <Card key={game.id}>
         <Card.Img variant="top" src={game.background_image} />
         <Card.Body className="center">
