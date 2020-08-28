@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import axios from "axios";
 import { GameContext } from "../context/GameContext";
-import { Button, Container, Row, Col } from "react-bootstrap";
+import { Button, Container, Row } from "react-bootstrap";
 
 const GamesFilters = () => {
   const { gameList, setGameList } = useContext(GameContext);
