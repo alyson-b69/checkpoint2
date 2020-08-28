@@ -15,6 +15,8 @@ const Footer = () => {
           <a
             href="https://www.wildcodeschool.com/fr-FR"
             title="Wild Code School"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Wild Code School
           </a>{" "}
@@ -22,6 +24,8 @@ const Footer = () => {
           <a
             href="https://www.linkedin.com/in/alyson-bernabeu-08249a172/"
             title="LinkedIn Alyson"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Alyson.B
           </a>
