@@ -25,10 +25,10 @@ const GamesFilters = () => {
   return (
     <Container className="mb-3">
       <Row>
-        <Col xs={2}>
-          <h3>Filtres</h3>
+        <Col xs={2} className="h3 mr-2">
+          Filtres
         </Col>
-        <Col xs={2}>
+        <Col xs={6}>
           <Button onClick={viewBest}>
             {isViewBest ? "All Games" : "Best Games"}
           </Button>

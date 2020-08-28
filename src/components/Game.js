@@ -33,13 +33,19 @@ const Game = ({ game }) => {
               </li>
             ))}
           </ul>
-
-          <Link to={{ pathname: gameLink, state: { detail: game } }}>
-            <Button className="mr-2">View Game</Button>
-          </Link>
-          <Button variant="outline-danger" onClick={deleteGame}>
-            Delete Game
-          </Button>
+          <div className="text-center">
+            <Link to={{ pathname: gameLink, state: { detail: game } }}>
+              <Button className=" mb-2">View Game</Button>
+            </Link>
+            {"  "}
+            <Button
+              className="mb-2"
+              variant="outline-danger"
+              onClick={deleteGame}
+            >
+              Delete Game
+            </Button>
+          </div>
         </Card.Text>
       </Card.Body>
       <Card.Footer>
