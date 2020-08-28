@@ -1,0 +1,19 @@
+// Override default variables before the import
+$body-bg: #fff;
+
+.details-list {
+  padding-inline-start: 0;
+}
+
+.details-item {
+  list-style-type: none;
+  display: inline;
+}
+
+.bg-dark {
+  background-color: #212529;
+  color: #fff;
+}
+
+// Import Bootstrap and its default variables
+@import "~bootstrap/scss/bootstrap.scss";
