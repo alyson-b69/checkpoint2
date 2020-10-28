@@ -1,68 +1,123 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Checkpoint 2 - 4h
 
-## Available Scripts
+---
+### EN version (Scroll down for FR version)
+---
 
-In the project directory, you can run:
+You will have 4 hours to finish this checkpoint. This checkpoint is not an exam, it will allow us to validate your skills, so try to do it as much as possible on your side.
+This checkpoint is very consistent, if you can't do everything it doesn't matter, do your best;)
 
-### `npm start`
+## !!! FIRST STEP REQUIRED BEFORE STARTING THE FIRST EXERCISE!
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Clone this project
+- Create a `city_lastname_firstname` branch, which will contain your progress. Replace `city_lastname_firstname` with the city of your campus, your last name and first name.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Step 1 - React
 
-### `npm test`
+<img src="https://giphygifs.s3.amazonaws.com/media/14hVsVZomE4hj2/giphy.gif" height="150">
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In this step, you will create a new React project in which there will be 2 components that will display data from an API.
 
-### `npm run build`
+The API is available on this url [https://wild-games.herokuapp.com/api/v1](https://wild-games.herokuapp.com/api/v1).
+You can use either [axios](https://github.com/axios/axios) or [fetch](https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch) to recover the data.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Think about `commit' regularly with an explicit message. For example: ``Create GameList and Game components``.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+**Friendly Tip:** before starting, make the *component tree* and *wireframes*! :)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Create a new React project named **list-games** using `create-react-app`.
+- Create 2 components `<GameList />` and `<Game />`.
+- Use `<GameList />` component to fetch from the API and display each game on a `<Game />` component.
+- `<Game />` retrieves with `props` the information of each game (`name`, `background_image`, `rating`...) and displays it in the format of your choice.
+- `<Game />` contains a `<button>` that removes a game on click from the `state`. There is no need to remove it from the API.
 
-### `npm run eject`
+## Step 2 - Bonus
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Do you have any time left? Perfect! Perfect! You will be able to add some useful features to your React project!
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Filter games by rating
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Add a `Best Games` button to filter games by `rating`.
+- When you click on the button, only games with a `rating` greater than or equal to 4.5 are displayed.
+- The button text is replaced by `All Games` and when clicked, all games are displayed again.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### Add a screenshots page
 
-## Learn More
+For this bonus, use the `react-router` library.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Add a navigation link in each game to see the images listed in the `short_screenshots` field. 
+- Clicking on this link changes the page to `http://localhost:3000/jeu/screenshots/5` where 5 is the id of the selected game.
+- Also display a navigation link to return to the home page.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Step 3 - Congratulations!
 
-### Code Splitting
+You can quench your thirst at the brewery, you've earned it!
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+**N.B.: You don't have to start with this step...;)**
 
-### Analyzing the Bundle Size
+![Good Luck](https://media.giphy.com/media/AC1PtbdsJZyOQ/giphy.gif)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
+---
+### FR version
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Pour ce travail tu as 4h devant toi. Ce checkpoint n'est pas un examen, il va nous permettre de valider tes compétences, essaye donc de le faire au maximum de ton côté.
+Ce checkpoint est très consistant, si tu n'arrives pas à tout faire ce n'est pas grave, fais de ton mieux ;)
 
-### Advanced Configuration
+## !!! PREMIERE ÉTAPE OBLIGATOIRE AVANT DE COMMENCER LE PREMIER EXERCICE !!!
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+- Clone ce projet
+- Crée une branche `ville_nom_prenom`, qui va contenir ton avancée. Remplace `ville_nom_prenom` par la ville de ton campus, ton nom et ton prénom.
 
-### Deployment
+## Étape 1 - Quiz
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+- Pour répondre au quiz rend toi sur [cette application](https://wild-quiz-client.herokuapp.com/).
+- Réponds aux questions du Quiz **Checkpoint 2 - JS - React**
+- Une fois le quiz terminé, copie le lien fourni par l'application
+- Crée un fichier Quiz.md à la racine du projet
+- Colles-y le lien que tu viens de récupérer
+- `commit` ton fichier
 
-### `npm run build` fails to minify
+## Étape 2 - React
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<img src="https://giphygifs.s3.amazonaws.com/media/14hVsVZomE4hj2/giphy.gif" height="150">
+
+Dans cette étape, tu vas créer un nouveau projet React dans lequel il y aura 2 composants qui afficheront des données provenant d'une API.
+
+L'API est accessible sur cette url [https://wild-games.herokuapp.com/api/v1](https://wild-games.herokuapp.com/api/v1).
+Tu peux utiliser au choix [axios](https://github.com/axios/axios) ou [fetch](https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch) pour récupérer les données.
+
+Pense bien à `commit` régulièrement avec un message explicite. Par exemple : `"Create GameList and Game components"`.
+
+- Crée un nouveau projet React nommé **list-games** grâce à `create-react-app`.
+- Crée 2 composants `<GameList />` et `<Game />`.
+- `<GameList />` récupère les jeux de l'API et  les affiche dans autant de composants `<Game />`.
+- `<Game />` récupère avec des `props` les informations de chaque jeu (`name`, `background_image`, `rating`…) et les affiche au format de ton choix.
+- `<Game />` contient un `<button>` qui permet au click de supprimer un jeu du `state`. _Il n'y a pas besoin de le supprimer de l'API._
+
+## Étape 3 - Bonus
+
+Il te reste du temps ? Parfait ! Tu vas pouvoir ajouter quelques fonctionnalités utiles à ton projet React !
+
+### Filter les jeux par note
+
+- Ajoute un bouton `Best Games` pour filter les jeux par `rating`
+- Quand on clique sur le bouton seuls les jeux dont le `rating` est supérieur ou égal à 4.5 sont affichés
+- Le texte du bouton est remplacé par `All Games` et quand on clique dessus, tous les jeux sont affichés à nouveau
+
+### Ajouter une page screenshots
+
+Pour ce bonus, utilise la librairie `react-router`.
+
+- Ajoute un lien de navigation dans chaque jeu pour voir les images listées dans le champ `short_screenshots`. 
+- Cliquer sur ce lien change la page pour `http://localhost:3000/jeu/screenshots/5` ou 5 est l'id du jeu selectionné.
+- Affiche également un lien de navigation permettant de revenir sur la page d'accueil.
+
+## Étape 4 - Félicitations !
+
+Tu peux aller te désaltérer à la brasserie, tu l'as amplement mérité !
+
+**N.B. : Tu ne dois pas commencer par cette étape… ;)**
+
+![Good Luck](https://media.giphy.com/media/AC1PtbdsJZyOQ/giphy.gif)
